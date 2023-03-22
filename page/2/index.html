@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Hexo</title><meta name="author" content="YuRing"><meta name="copyright" content="YuRing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://yu-ring.github.io/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="YuRing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yu-ring.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-22 20:05:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/22/5.7-%E7%BA%BF%E6%80%A7DP%E2%80%94%E2%80%94%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="线性DP（3）">线性DP（3）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></span></div><div class="content">问题描述![[Pasted image 20230218132138.png|550]]
+分析最终答案为3 即abd
+状态转移方程状态表示
+
+涉及到了2个字符串，$f(i,j$)：从左向右，以第$i$个字母结尾的字符串1和以第j个字母结尾的字符串2之间最长的公共子序列的长度
+
+状态转移从左到右依次从两个字符串中选取两个字符$a[i]$ $b[j]$    $f[i][j]$更新为
+
+
+$a[i],b[j]$ 都不选：$f[i-1][j-1]$  &#x2F;&#x2F;$a[i],b[j]$都不在公共子序列中 
+
+$a[i],b[j]$ 都选：$f[i-1][j-1]+1$ &#x2F;&#x2F; 此时显然有$a[i]&#x3D;b[j]$的前提
+
+选$a[i]$，不选$b[j]$ ：表示$a[i]$一定在子序列中，但$f[i][j-1]$并不能保证$a[i]$在子序列中
+
+不选$a[i]$，选$b[j]$ ：表示$b[i]$一定在子序列中，但$f[i-1][j]$并不能保证$b[i]$在子序列中
+
+
+显然 $f[i][j-1]$ 和 $f[i-1][j]$ 情况实际上包括了00 0 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/22/5.8-%E5%8C%BA%E9%97%B4DP%E2%80%94%E2%80%94%E7%9F%B3%E5%AD%90%E5%90%88%E5%B9%B6/" title="线性DP（4）">线性DP（4）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></span></div><div class="content">问题描述![[Pasted image 20230218143716.png|550]]
+分析
+经典的DP问题。之前的dp问题都是用$i−1$的规模的子问题来求解当前的问题。其实，类似于贪心，不断地做对当下最好的选择比如之前的背包问题、子序列问题，都是看的最后一个元素，只做出当下最好的选择，而体现出做最好选择的部分就是通过比较选出最大值最小值的代码。
+
+
+但是这道题不一样，这道题将带给我们新的理解。如果说之前的问题是贪心+DP，那么这个问题就是分治+贪心+DP。其中DP决定了我们这道题的框架，而前面的算法决定了我们书写状态转移方程的依据
+
+状态转移方程状态表示
+
+$f(i,j)$ 表示合并第$i$堆到第$j$堆石子所需要的最小代价，区间$[i,j]$
+
+状态转移
+
+从结果要合并成一整堆来看，最后一步由两个分堆合并成一个。分治的思想：（黑线表示合并两大堆石子的最优选择。）![[Pasted image 20230219115303.png|300]]同样的，过程中任意某一堆$[i,j]$区间的d堆石子，分法有：(1,d-1) ; (2,d-2) ; (3,d-3) ; …;不合并合并前， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/22/5.9-%E6%95%B0%E4%BD%8D%E7%BB%9F%E8%AE%A1DP/" title="数位统计DP">数位统计DP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></span></div><div class="content">问题描述![[Pasted image 20230226135601.png|650]]![[Pasted image 20230226135622.png|650]]
+分析求区间$[a,b]$中x出现的次数，利用前缀和思想，求1a-1和1b区间x出现的次数做差。因此只需要一个count(n,x)函数求出1~n中x的次数即可。
+
+e.g. count(n , 1)  假定n&#x3D;7    分别求出1在每一位上出现的次数    设n的表示为 $n&#x3D;abcdefg$ , 比如1n中表示的第四位形式为 xxx1yyy    要使：1 &lt;&#x3D; xxx1yyy &lt;&#x3D; abcdefg    1) xxx &#x3D; 000abc-1 , yyy &#x3D; 000999 , 共$abc*1000$种选法    2) xxx&#x3D; abc, yyy：        2.1) d &lt; 1 : 要使得 abc1yyy &lt; abc0efg 共0种可选        2.2) d &#x3D; 1 : yyy &#x3D; 000efg1  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0/" title="计算机网络——第一章">计算机网络——第一章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-22T10:54:58.000Z" title="Created 2023-03-22 18:54:58">2023-03-22</time></span></div><div class="content">第一章 概述重要内容
+互联网边缘部分和核心部分的作用，以及分组交换的概念计算机网络的性能指标计算机网络的分层次的体系结构的概念，协议和服务的概念，
+
+计算机网络的一些相关知识
+三网——电信网络，有线电视网络，计算机网络三网融合——将三种网络的功能融合在一起计算机网络：也是一种通信基础设施，与其他两种网络不同的是计算机网络的端设备是功能强大的计算机，两个重要的功能：连通和共享
+
+互联网概述
+互联网（因特网）： 起源于美国的因特网现在是世界上最大的国际性计算机网络计算机网络：由若干节点和连接这些节点的链路组成（节点可以是计算机，集线器，交换机，路由器等）互连网：网络和网络之间通过路由器连接起来——即网络的网络
+
+
+因此，网络把许多计算机连接在一起，互连网将许多网络连接在一起，互联网则是特指专用名词
+
+互联网发展的三个阶段——
+
+第一阶段：单网络ARANET——1969年美国国防部建立的第一个分组交换网第二阶段：三级结构的因特网——主干网，地区网，校园网第三阶段: 多层次IPS（因特网服务提供者）结构的因特网
+
+ISP(互联网服务提供者)
+
+ISP可以申请到IP地址，拥有通信线路和路由器等连 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0/" title="计算机网络——第二章">计算机网络——第二章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-22T10:54:58.000Z" title="Created 2023-03-22 18:54:58">2023-03-22</time></span></div><div class="content">第二章 物理层重要内容
+物理层的任务几种常用的信道复用技术几种常用的宽带接入技术，主要是ADSL，FTTx
+
+物理层的基本概念物理层的作用是屏蔽掉传输媒体和通信手段（即物理设备）的差异，让上层的链路层不必考虑物理层差异。 物理层协议——规程物理层的主要任务
+
+确定与传输媒体的接口有关的一些特性1）机械特性：指明接口的尺寸形状等物理适配。2）电气特性：指明接口电缆各线的电压范围3）功能特性：指明线上某一电平的电压意义4）过程特性：指明事件出现顺序完成数据在计算机内部（并行传输） 与 通信线路上（串行传输） 之间的串并传输方式的转换
+
+数据通信的基本知识1）数据通信系统的模型源系统——传输系统——目的系统![[Pasted image 20230315005705.png|500]]
+
+
+源系统（源点，发送器）源点：源点设备要传输的数据发送器：源点比特流的的调制器，转化为信号
+传输系统（传输线或者网络）
+目的系统（接收器，终点）接收器：接受传输系统的信号并转化为目的设备处理的信息的调制器终点：获取接收器的数字比特流
+
+
+常用术语：  
+
+消息：传送的信息数据：消息的实体，即用特定方式表示的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/19/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-19T14:21:02.964Z" title="Created 2023-03-19 22:21:02">2023-03-19</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">YuRing</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.0-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题导论">背包问题导论</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.1-01%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="01背包问题">01背包问题</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.10-%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9DP/" title="状态压缩DP">状态压缩DP</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.11-%E6%A0%91%E5%BD%A2DP/" title="树形DP">树形DP</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.12-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" title="记忆化搜索">记忆化搜索</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">16</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-22T12:05:53.645Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By YuRing</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

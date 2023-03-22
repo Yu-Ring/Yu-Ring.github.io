@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>计算机网络——第二章 | Hexo</title><meta name="author" content="YuRing"><meta name="copyright" content="YuRing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="描述">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络——第二章">
+<meta property="og:url" content="https://yu-ring.github.io/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="描述">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-03-22T10:54:58.000Z">
+<meta property="article:modified_time" content="2023-03-22T10:54:58.000Z">
+<meta property="article:author" content="YuRing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yu-ring.github.io/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络——第二章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-03-22 18:54:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络——第二章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-03-22T10:54:58.000Z" title="Created 2023-03-22 18:54:58">2023-03-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-03-22T10:54:58.000Z" title="Updated 2023-03-22 18:54:58">2023-03-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络——第二章"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="第二章-物理层"><a href="#第二章-物理层" class="headerlink" title="第二章 物理层"></a>第二章 物理层</h2><h4 id="重要内容"><a href="#重要内容" class="headerlink" title="重要内容"></a>重要内容</h4><blockquote>
+<p>物理层的任务<br>几种常用的信道复用技术<br>几种常用的宽带接入技术，主要是ADSL，FTTx</p>
+</blockquote>
+<h3 id="物理层的基本概念"><a href="#物理层的基本概念" class="headerlink" title="物理层的基本概念"></a>物理层的基本概念</h3><p>物理层的作用是<strong>屏蔽掉传输媒体和通信手段（即物理设备）的差异，让上层的链路层不必考虑物理层差异。</strong> 物理层协议——<strong>规程</strong><br>物理层的主要任务</p>
+<blockquote>
+<p><strong>确定与传输媒体的接口有关的一些特性</strong><br>1）机械特性：指明接口的尺寸形状等物理适配。<br>2）电气特性：指明接口电缆各线的电压范围<br>3）功能特性：指明线上某一电平的电压意义<br>4）过程特性：指明事件出现顺序<br>完成数据在<strong>计算机内部（并行传输）</strong> 与 <strong>通信线路上（串行传输）</strong> 之间的串并传输方式的转换</p>
+</blockquote>
+<h3 id="数据通信的基本知识"><a href="#数据通信的基本知识" class="headerlink" title="数据通信的基本知识"></a>数据通信的基本知识</h3><p><strong>1）数据通信系统的模型</strong><br><strong>源系统——传输系统——目的系统</strong><br>![[Pasted image 20230315005705.png|500]]</p>
+<blockquote>
+<ol>
+<li><strong>源系统（源点，发送器）</strong><br>源点：源点设备要传输的数据<br>发送器：源点比特流的的<strong>调制器</strong>，转化为信号</li>
+<li><strong>传输系统（传输线或者网络）</strong></li>
+<li><strong>目的系统（接收器，终点）</strong><br>接收器：接受传输系统的信号并转化为目的设备处理的信息的<strong>调制器</strong><br>终点：获取接收器的数字比特流</li>
+</ol>
+</blockquote>
+<p>常用术语：  </p>
+<blockquote>
+<p>消息：传送的信息<br>数据：消息的实体，即用特定方式表示的信息<br>信号：数据的电气或者电磁表现  可以分为两类：<strong>模拟信号</strong>和<strong>数字信号</strong><br><strong>码元</strong>：使用时域的波形表示数字信号（离散信号）时，代表不同离散数值的基本波形。</p>
+</blockquote>
+<p><strong>2）信道的基本概念</strong><br><strong>信道</strong>：向某一个方向传送信息的媒体。<br>三种形式：</p>
+<blockquote>
+<p><strong>单向信道</strong>：一方发送，一方接收<br><strong>双向交替信道</strong>：双方都可发送消息，但不能同时进行  <strong>单工</strong><br><strong>双向同时信道</strong>：双方可同时发送信息  </p>
+</blockquote>
+<p><strong>基带信号</strong>（基本频带信号）：<strong>来自信源的信号</strong>。包含较多<em>低频分量</em>甚至<em>直流分量</em>（许多信道不能传输）<br><strong>调制</strong>：<em>将来自源信号的低频甚至直流信号进行变换</em>，使得这种低频直流信号可以便于在信道内传输  </p>
+<blockquote>
+<p>两种调制方法：</p>
+</blockquote>
+<blockquote>
+<p><strong>基带调制</strong>： 把数字信号转换为另一种形式的数字信号，即<em>仅对信号的波形进行变换</em>，可称之为<strong>编码</strong>调制<br><img src="https://img-blog.csdn.net/20180918172905582?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyNDY4MTMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="|500">不归零制：<strong>电平正负</strong>分别表示1、0<br>归零制：<strong>正负脉冲</strong>分别表示1、0<br>曼彻斯特编码：周期<strong>中心跳动方向</strong>上和下分别为0、1<br>差分曼彻斯特编码：每一位中心都有跳变。<strong>位开始边界有无跳变</strong>分别表示0、1</p>
+</blockquote>
+<blockquote>
+<p><strong>带通调制</strong>：使用<strong>载波</strong>进行调制，<em>将基带信号的频率般到高频段，并将之转换为模拟信号</em>，此时信号也称<strong>带通信号</strong>。<br><img src="https://img-blog.csdn.net/20180918172947184?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyNDY4MTMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="|500"><br>调幅：<strong>有无载波</strong>分对应0、1<br>调频：<strong>不同频率</strong>区分0、1<br>调相：<strong>初始相位</strong>0和180对应0、1<br><strong>正交振幅调制</strong></p>
+</blockquote>
+<p><strong>3）信道极限容量</strong><br>一定的失真不影响数字通信。但要避免失真严重<br>（码元速率过高、信号传输距离过远、噪声干扰大、传输媒体质量低）</p>
+<ul>
+<li>码元在信道上的传输速率</li>
+</ul>
+<ol>
+<li>信道所能通过的频率范围<blockquote>
+<p><strong>码间串扰</strong>：信道传输的频率范围有限，导致高频分量衰减，码元拖影导致码元之间界限模糊。<br><em>奈氏准则</em>：每赫带宽的理想低通信道的最高码元传输速率V是每秒2个码元.$$V&#x3D;2W$$</p>
+</blockquote>
+</li>
+<li>信噪比<blockquote>
+<p>噪声对信号的影响是相对的，信号越强，影响越小，因此考虑信噪比。<br>$信噪比(dB) &#x3D; 10 log_{10}(S&#x2F;N)(dB)$<br><em>香农公式</em>：信道<strong>极限</strong>传输速率C,信道带宽W,信噪比S&#x2F;N$$C&#x3D;Wlog_{2}(1+S&#x2F;N)(bit&#x2F;s)$$ <strong>带宽和信噪比越高，信息传输速率上限越高</strong></p>
+</blockquote>
+</li>
+</ol>
+<p>增加每个码元携带的信息量可以提高信息传输速率，但一个码元表示比特越多，抗干扰要求越高。</p>
+<h3 id="物理层下面的传输媒体："><a href="#物理层下面的传输媒体：" class="headerlink" title="物理层下面的传输媒体："></a>物理层下面的传输媒体：</h3><blockquote>
+<p>引导性传输媒体：双绞线，同轴电缆，光缆，<br>非引导型传输媒体：即无线传输</p>
+</blockquote>
+<h3 id="信道复用技术"><a href="#信道复用技术" class="headerlink" title="信道复用技术"></a>信道复用技术</h3><p><strong>复用</strong>：发送端使用一个复用器，接收端使用分用器，使用共享信道。<br>![[Pasted image 20230308112649.png|350]]<br><strong>频分复用FDM</strong></p>
+<blockquote>
+<p>用户在同样的时间内<em>占用不同的频率带宽</em>而复用同一个信道   <br>![[Pasted image 20230315095021.png|400]]</p>
+</blockquote>
+<p><strong>时分复用TDM</strong></p>
+<blockquote>
+<p>将时间划分为相同的时分复用帧TDM，<em>在不同的时间占用相同的频带宽度</em>，利于数字信号。由于时分复用会在用户间不断切换，所以不使用的用户也会占用，使用的只占用一部分。<strong>利用率不高</strong><br>![[Pasted image 20230315095047.png|400]]</p>
+</blockquote>
+<p><strong>统计时分复用STDM</strong> </p>
+<blockquote>
+<p>改进的时分复用，按需动态分配时隙，而不是固定分配时隙 （每个STMD帧的时隙数小于连接在<em>集中器</em>上的用户数，使得<strong>每次传送的STDM帧中的分组都是满的</strong>。又称<em>异步时分复用</em>。由于信息顺序打乱不可预知，<strong>每个STDM前端一部分存放用户地址</strong>，用来判别对应的用户。<br>![[Pasted image 20230308120657.png|350]]</p>
+</blockquote>
+<p><strong>波分复用WDM</strong></p>
+<blockquote>
+<p>光的频分复用，利用在光线技术通信中；光频率高，所以采用波长区分。<br>复用器:<strong>合波器</strong>。分用器：<strong>分波器</strong>。<br><strong>密集波分复用</strong>，复用器：<strong>光复用器</strong>，分用器：<strong>光分用器</strong><br>![[Pasted image 20230315101822.png|400]]</p>
+</blockquote>
+<p><strong>码分复用CDM</strong></p>
+<blockquote>
+<p>每个用户在相同的时间使用相同的频带进行通信，但各用户使用经过挑选的<strong>不同码型</strong>，从而使得个用户之间可以进行独立的通信.<br><strong>码片</strong>：1bit的时间进一步划分。占用的频率带宽提高，<strong>扩频</strong>。<br><strong>码片序列</strong>：序列自身代表1，反码代表0；不同站点间码片序列<strong>规格化内积</strong>为0，同序列或者反码<strong>规格化内积</strong>分别为1和-1；<br>![[Pasted image 20230315101845.png|400]]</p>
+</blockquote>
+<h3 id="数字传输系统"><a href="#数字传输系统" class="headerlink" title="数字传输系统"></a>数字传输系统</h3><h3 id="宽带接入技术"><a href="#宽带接入技术" class="headerlink" title="宽带接入技术"></a>宽带接入技术</h3><p>宽带：将用户连接到某个ISP以获取上网所需的IP地址。<br><strong>有线宽带接入</strong>——ADSL技术和FTTX技术<br><strong>无线宽带接入</strong><br>非对称数字用户线ADSL：对现有模拟电话的用户线改造<br>非对称数字用户线ASDL技术是用数字技术对现有的模拟电话用户线进行改造，使其能够承载宽带业务的一种技术；<br>光纤同轴混合网HFC在有线电视网的基础上开发的<br>光纤到户技术FTTH</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://yu-ring.github.io">YuRing</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yu-ring.github.io/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0/">https://yu-ring.github.io/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0/" title="计算机网络——第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">计算机网络——第一章</div></div></a></div><div class="next-post pull-right"><a href="/2023/03/19/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">YuRing</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-number">1.</span> <span class="toc-text">第二章 物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9"><span class="toc-number">1.0.1.</span> <span class="toc-text">重要内容</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">物理层的基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-number">1.2.</span> <span class="toc-text">数据通信的基本知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E4%B8%8B%E9%9D%A2%E7%9A%84%E4%BC%A0%E8%BE%93%E5%AA%92%E4%BD%93%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">物理层下面的传输媒体：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E9%81%93%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-number">1.4.</span> <span class="toc-text">信道复用技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E4%BC%A0%E8%BE%93%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.5.</span> <span class="toc-text">数字传输系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%BD%E5%B8%A6%E6%8E%A5%E5%85%A5%E6%8A%80%E6%9C%AF"><span class="toc-number">1.6.</span> <span class="toc-text">宽带接入技术</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.0-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="背包问题导论">背包问题导论</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.1-01%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" title="01背包问题">01背包问题</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.10-%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9DP/" title="状态压缩DP">状态压缩DP</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.11-%E6%A0%91%E5%BD%A2DP/" title="树形DP">树形DP</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/22/5.12-%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" title="记忆化搜索">记忆化搜索</a><time datetime="2023-03-22T12:00:00.000Z" title="Created 2023-03-22 20:00:00">2023-03-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By YuRing</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
